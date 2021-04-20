@@ -10,6 +10,10 @@ public class CalculatorApp {
         while (true) {
             try {
                 CalculatorUtil.calculate();
+            } catch (ArithmeticException e) {
+                System.out.println(Color.RED +
+                        "\nXəta baş verdi!!!\nDüzgün olmayan riyazi əməliyyat"
+                        + Color.RESET + "\n");
             } catch (Exception ex) {
                 System.out.println(Color.RED +
                         "\nXəta baş verdi!!!\nXahiş olunur daxiletmə zamanı yalnız rəqəmlərdən istifadə edin"
